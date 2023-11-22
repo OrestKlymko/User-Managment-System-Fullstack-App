@@ -1,0 +1,42 @@
+<h1 style="text-align: center">Welcome <span class="badge bg-secondary">{{nameUser}}</span></h1>
+<br>
+<br>
+<div class="container">
+  <form (submit)="createTask($event)" ngForm>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Title</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="title"
+             [(ngModel)]="task.title" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Description" rows="3"
+                name="description" [(ngModel)]="task.description" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success" style="display: block; margin-left: auto;margin-right: auto;">Create task</button>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date creation</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let task of listOfTasks">
+      <td>{{task.title}}</td>
+      <td>{{task.description}}</td>
+      <td>{{task.dateCreation|date}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteTask(task.id)" >Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
