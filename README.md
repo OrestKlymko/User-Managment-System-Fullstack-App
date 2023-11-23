@@ -1,7 +1,11 @@
 
 # Project Title
 
-Full Stack App Note Managment System
+Full Stack App Note Manag
+
+
+
+ment System
 
 
 ## Tech Stack
@@ -14,6 +18,6 @@ Full Stack App Note Managment System
 
 
 ## Demo
-[Screen Recording 2023-11-22 at 20.41.00.mov](..%2F..%2F..%2FDesktop%2FScreen%20Recording%202023-11-22%20at%2020.41.00.mov)
-Insert gif or link to demo
 
+Insert gif or link to demo
+https://github.com/OrestKlymko/User-Managment-System-Fullstack-App/assets/116631168/f21fc605-aaa7-46d0-83df-be2ee471f383
